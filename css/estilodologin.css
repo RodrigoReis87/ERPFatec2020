@@ -1,0 +1,96 @@
+@font-face{
+    font-family: "OpenSans";
+    src: url("../font/Open_Sans/OpenSans-Regular.ttf");
+    font-size: 1em;
+}
+
+body { 
+    background-image: url("../img/Fundo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    width: 500px;
+    background-color: blanchedalmond;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    top: 130px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: "OpenSans";
+    color: blueviolet;
+    text-align: center;
+}
+
+h1:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: whitesmoke;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+label {
+    font-family: "OpenSans";
+    color: royalblue;
+    position: relative;
+    display: inline-block
+}
+
+/***estilo dos inputs***/
+
+::-webkit-input-placeholder {
+    font-style: italic;
+    color: rgba(000, 000, 000, 0.5);
+}
+
+input {
+    outline: none;
+}
+
+input:not([type="checkbox"]) {
+    width: 95%;
+    margin-top: 4px;
+    padding: 10px;    
+    border: 1px solid #b2b2b2;
+    align-items: initial;
+    
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+  }
+  
+  /***estilo do botão***/
+
+  input[type="submit"]{
+    width: 100%!important;
+    cursor: pointer;  
+    background: blueviolet;
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 20px;  
+    border: 1px solid #fff;   
+    margin-bottom: 10px;  
+    text-shadow: 0 1px 1px #333;
+    
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    
+    transition: all 0.2s linear;
+  }
+  input[type="submit"]:hover{
+    background: #4ab3c6;
+  }

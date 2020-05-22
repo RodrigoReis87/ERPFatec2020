@@ -1,0 +1,78 @@
+@font-face{
+    font-family: "OpenSans";
+    src: url("../font/Open_Sans/OpenSans-Regular.ttf");
+    font-size: 1em;
+}
+
+body { 
+    background-image: url("../img/Fundo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background: rgba(138, 43, 226, .8);
+    position: relative;
+}
+
+header #logotipo {
+    position: absolute;
+}
+
+label {
+    font-size: 30px;
+    font-family: "OpenSans";
+    color: seashell;
+    margin-left: 15px;
+}
+/*** aqui era pra fazer o menu retrátil
+#check {
+    display: none;
+}
+
+#icone {
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}***/
+
+.barra { 
+    background-color: rgba(138, 43, 226, .8);
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    transition: all .2s linear;
+    /***left: -300px;***/
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.link {
+    background-color: blueviolet;
+    padding: 20px;
+    font-family: "OpenSans";
+    font-size: 15pt;
+    transition: all .2s linear;
+    color: cornsilk;
+}
+
+.link:hover {
+    background-color: #4ab3c6;
+}
+
+/*** menu retrátil
+#check:checked ~ .barra {
+    transform: translate(300px);
+}***/
